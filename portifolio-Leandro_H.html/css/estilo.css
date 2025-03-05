@@ -1,0 +1,281 @@
+/*Estilizações Gerais*/
+*{
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Pooppins', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    background-color: #000000;
+    height: 100vh;
+    color: #ffff;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h2.titulo{
+    margin-top: 10%;
+    font-size: 30px;
+    color: #ffff;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: rgb(100, 191, 252);
+}
+
+/*Estlizando o Cabesalho*/
+head{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #6c6c6c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+}
+
+header a:hover{
+    color: #ffff;
+    transform: scale(1.50);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 40px;
+}
+
+
+
+/*Topo do site */
+
+.eu{
+    padding: 40px 4%;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.eu h1{
+    padding: 40px 4%;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+
+.eu span{
+    color: rgb(49, 111, 153);
+    display: block;
+}
+
+.contato button{
+    padding: 1px 5%;
+    font-size: 30%;
+    font-weight: 600;
+    background-color: rgb(100, 191, 252);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contato button:hover{
+    box-shadow: 2px 5px 9px #ffff;
+    zoom: 120%;
+    transform: scale(1.05);
+}
+
+.minha-imagem{
+    padding: 40px 20%;
+    zoom: 120%;
+}
+
+section.topo.flex{
+    align-items: center;
+    justify-content: center;
+}
+
+.topo .minha-imagem img{
+    position: relative;
+    animation: m-imagem 1s ease-in-out infinite alternate;
+}
+
+@keyframes m-imagem{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*Estilo SOBRE*/
+section.sobre{
+    padding: 40px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+}
+
+.sobre .texto{
+    color: #ffff;
+}
+
+.sobre .texto p{
+    margin: 30px 20%;
+    text-align: center;
+}
+
+/*Estilo HABILIDADES*/
+section.habilidades{
+    padding: 40px 4%;
+}
+
+section.habilidades .flex{
+    justify-content: space-around;
+}
+
+.habilidades .habilidades-box{
+    color: purple;
+    padding: 20px;
+    text-align: center;
+    margin: 25px 135px;
+    border-top: 5px solid rgb(100, 191, 252);
+    border-right: 5px solid rgb(21, 79, 117);
+    border-radius: 20px 0px 0px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.habilidades .habilidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgb(0, 31, 50);
+}
+
+/*Estilo PROJETOS*/
+section.projetos{
+    padding: 80px 4%;
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 50% 0%;
+    transition: 7s;
+    cursor: pointer;
+    border-radius: 50px 0px;
+    position: relative;
+}
+
+.img-port a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.img-port:hover{
+    background-position: 50% 460px;
+    zoom: 110%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000af;
+    border-radius: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/*Estilo RODAPÉ*/
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 20px 10px #ade1ff;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid rgb(100, 191, 252);
+}
+
+.line .redes-sociais button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(100, 191, 252);
+    font-size: 30%;
+    margin: 0 5px;
+    transition: 0.8s;
+}
+
+.line .redes-sociais button:hover{
+    box-shadow: 0 0 18px #0080ff;
+    margin: 0 10px;
+    transform: scale(1.05);
+}
+
+.line .redes-sociais img{
+    width: 30px;
+}
+
+.line .em button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(100, 191, 252);
+    text-decoration: none;
+    color: #ffff;
+}
+
+.line .em img{
+    width: 17px;
+}
+
+.line .em a{
+    text-decoration: none;
+    color: #ffff;
+}
